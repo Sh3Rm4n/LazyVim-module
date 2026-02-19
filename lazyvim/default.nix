@@ -137,7 +137,7 @@ in
     programs.neovim = {
       enable = true;
 
-      extraLuaConfig = ''
+      initLua = ''
         ${
           lib.optionalString (cfg.masonPackages != { }) ''
             vim.env.MASON = "${
